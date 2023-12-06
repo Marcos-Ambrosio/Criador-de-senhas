@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criador de senhas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="main">
+        <h1>Criador de senhas</h1>
+
+        <div class="wrapper-range">
+            <label for="input">Selecione a quantidade de caracters :</label>
+                <input type="range" value="15" min="5" max="25" class="input-range">
+                <output class="output">15</output>
+        </div>
+
+        <div class="wrapper-checkbox">
+            <div class="box">
+                <label for="lowercase">Letras Minisculas</label>
+                    <input type="checkbox" class="checkbox" id="lowercase" checked>
+            </div>
+
+            <div class="box">
+                <label for="uppercase">Letras Maiuculas</label>
+                    <input type="checkbox" class="checkbox" id="uppercase">
+            </div>
+
+            <div class="box">
+                <label for="numbers">Numeros</label>
+                    <input type="checkbox" class="checkbox" id="numbers">
+            </div>
+
+            <div class="box">
+                <label for="especials">Caracteres especias</label>
+                    <input type="checkbox" class="checkbox" id="especials">
+            </div>
+        </div>
+        <button class="btnCreate">Criar senha</button>
+        <hr>
+        <div class="password-field"></div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
